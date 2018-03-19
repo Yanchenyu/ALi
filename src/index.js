@@ -5,23 +5,13 @@
 
 import React, { Component } from 'react'
 import { render } from 'react-dom'
-import { store } from './redux/store'
-import { Provider } from 'react-redux'
-import { hashHistory, Router, Route } from 'react-router'
+import App from './containers/index'
 
-require('./theme/css/index');
-
-const IndexContainer = (location, cb) => {
-    require.ensure([], (require) => {
-        cb(null, require('./containers/index').default)
-    }, 'index')
-};
+require('./theme/css')
 
 render(
-    <Provider store={store}>
-        <Router history={hashHistory}>
-            <Route path='/index' getComponent={IndexContainer}></Route>
-        </Router>
-    </Provider>,
+    <div>
+        <App />
+    </div>,
     document.getElementById('root')
 )

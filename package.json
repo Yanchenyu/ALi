@@ -45,6 +45,7 @@
     "webpack-dev-server": "2.9.7"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-core": "^6.23.1",
     "babel-loader": "^6.4.0",
     "babel-plugin-add-module-exports": "^0.2.1",
@@ -78,9 +79,10 @@
     "jquery": "^3.1.1",
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.5",
     "lru-memoize": "^1.0.1",
     "map-props": "^1.0.0",
+    "mockjs": "^1.0.1-beta3",
     "mui": "^1.0.0",
     "multireducer": "^3.1.0",
     "node": "8.9.2",
